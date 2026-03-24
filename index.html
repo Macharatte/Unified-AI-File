@@ -822,15 +822,7 @@ body.sidebar-open #sidebar-overlay { display: block; }
       新規チャット
     </button>
   </div>
-  <div class="model-badges" style="display:flex;align-items:center;gap:8px;">
-    <span class="mbadge mb-grok">Grok-1</span>
-    <span class="mbadge mb-ds">DeepSeek</span>
-    <span class="mbadge mb-llama">Llama 4</span>
-    <span class="mbadge mb-mistral">Mistral</span>
-    <span class="mbadge mb-qwen">Qwen</span>
-    <button id="apikey-btn" onclick="showApiKeyModal().then(k=>{if(k){};})" title="APIキー設定" style="display:none;padding:4px 10px;background:var(--surface);border:1px solid var(--border);border-radius:4px;color:var(--fg3);font-family:var(--mono);font-size:9px;cursor:pointer;letter-spacing:.05em;transition:all .15s;">⚙ API KEY</button>
-  </div>
-</header>
+  </header>
 
 <div id="chat-area">
   <div id="welcome">
@@ -839,7 +831,8 @@ body.sidebar-open #sidebar-overlay { display: block; }
     <p class="welcome-sub white-text">
       数多の生成AIの特性を参考に情報をウェブ検索して最も正確な回答を提供します<br>
       使用言語に合わせて出力します<br>
-      ※本サービスは公開情報を参考に独自実装したものであり、特定のAIサービスとは関係ありません
+      ※本サービスは公開情報を参考に独自実装したものであり、<br>
+      特定のAIサービスとは関係ありません
     </p>
     <div class="strategy-grid">
       <div class="strat-card"><div class="strat-name"><span class="strat-dot" style="background:var(--grok)"></span>Grok-1</div><div class="strat-desc">多角的な視点で質問を分析</div></div>
